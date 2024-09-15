@@ -22,6 +22,7 @@ function Home2() {
               Currently in my last year at studies at College Maisonneuve. I learned a lot of things in the past 3 years. I am a passionate software developer, born and brought up in Montreal. I am a Full Stack Web Developer with React.js, Javascript, Html, Css, Node.js, and Express.js as my tech stack.
               <br />
               <br />I am always ready to learn and work across new technologies and domains.
+              <br />
               <br />I am fluent in classics like
               <i>
                 <b className="purple"> Python, Java, Javascript and always learning more!</b>
@@ -29,6 +30,7 @@ function Home2() {
               <br />
               <br />
               When I am not coding, you will find me with my camera, capturing moments. I love to travel and explore new places.
+              <br />
               <br />
               I will never stop breaking into new topics in the technological world we live in.  &nbsp;
               <i>
