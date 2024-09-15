@@ -21,11 +21,14 @@ function Home2() {
             <p className="home-about-body">
               Currently in my last year at studies at College Maisonneuve. I learned a lot of things in the past 3 years. I am a passionate software developer, born and brought up in Montreal. I am a Full Stack Web Developer with React.js, Javascript, Html, Css, Node.js, and Express.js as my tech stack.
               <br />
+              <br />I am always ready to learn and work across new technologies and domains.
               <br />I am fluent in classics like
               <i>
                 <b className="purple"> Python, Java, Javascript and always learning more!</b>
               </i>
               <br />
+              <br />
+              When I am not coding, you will find me with my camera, capturing moments. I love to travel and explore new places.
               <br />
               I will never stop breaking into new topics in the technological world we live in.  &nbsp;
               <i>
@@ -87,7 +90,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/_simply.adam_/"
+                  href="https://www.instagram.com/pictured.by_a/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
