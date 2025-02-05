@@ -34,6 +34,12 @@ import {
   SiWordpress,     // WordPress
   SiBulma,         // Bulma
   SiCisco,         // Cisco
+  SiUnity,         // Unity
+  SiCsharp,        // C#
+  SiTypescript,    // TypeScript
+  SiVite,          // Vite
+  SiFlutter,       // Flutter
+  SiPycharm,       // PyCharm
 } from "react-icons/si";
 
 function Techstack() {
@@ -131,6 +137,25 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiCisco />  {/* Cisco */}
+      </Col>
+      {/* New Icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiUnity />  {/* Unity */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCsharp />  {/* C# */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />  {/* TypeScript */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVite />  {/* Vite */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />  {/* Flutter */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPycharm />  {/* PyCharm */}
       </Col>
     </Row>
   );

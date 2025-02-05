@@ -5,6 +5,10 @@ import Particle from "../Particle";
 import Roblox from "../../Assets/Projects/Roblox.png";
 import BookingH from "../../Assets/Projects/BookingH.png";
 import AnimeService from "../../Assets/Projects/AnimeService.png";
+import BCSAI from "../../Assets/Projects/BCSAI.jpg";
+import VG from "../../Assets/Projects/VG.png";
+import SR from "../../Assets/Projects/SR.jpeg";
+import Sortify from "../../Assets/Projects/Sortify.jpg";
 
 function Projects() {
   return (
@@ -22,7 +26,7 @@ function Projects() {
             <ProjectCard
               imgPath={BookingH}
               title="Haircut Booking Website"
-              description="A booking and review platform designed to help hair salons create accounts and allow users to book appointments through the website. Built using HTML, JavaScript, and CSS, the website enables salons to set up and manage their profiles, detailing their services, location, and availability. Users can create accounts to make and manage their reservations, leave reviews, and rate their experiences. Additionally, they can favorite salons for easier future access. I was the main coder and leader in a group of four, overseeing the development and ensuring the implementation of these features."
+              description="A booking and review platform designed to help hair salons create accounts and allow users to book appointments through the website. Built using HTML, JavaScript, and CSS."
               ghLink="https://github.com/NeTBionicR/Website-For-Haircut-Booking"
             />
           </Col>
@@ -31,7 +35,7 @@ function Projects() {
             <ProjectCard
               imgPath={AnimeService}
               title="Anime Streaming Service"
-              description="During my stay at Collège de Maisonneuve, I designed and built a web application for streaming TV series, which would be used to watch anime. The application integrates user registration and login functionalities through an API provided to us by our professor, offering a seamless and interactive experience. By utilizing React.js and JavaScript XML, I implemented sophisticated features for users to look at the history of their watched shows and allow them to read details of the chosen anime."
+              description="A web application for streaming anime, built using React.js and integrating user authentication via an API."
               ghLink="https://github.com/NeTBionicR/Anime-Streaming-Service"
               demoLink="https://e2235970-tp2.azurewebsites.net"
             />
@@ -39,9 +43,42 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={BCSAI}
+              title="Better Call Saul AI - Conuhacks IX Winner"
+              description="An AI-powered legal assistant using Vite, React, TypeScript, DeepSeek, and Deepgram to help Quebec citizens get accurate legal information."
+              ghLink="https://github.com/Stoplossking1/BetterCallSaulAI"
+            />"
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={VG}
+              title="3D Art Gallery"
+              description="An immersive 3D art gallery built with Unity and C#, featuring first-person navigation and Firebase-powered global chat. DEMO WILL SOON BE AVAILABLE."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={SR}
+              title="Shadow Realm – 2D Hack & Slash"
+              description="A 2D hack & slash platformer in Unity, featuring multiple enemies, levels, a boss, and an endless wave mode, with Firebase for data storage. DEMO WILL SOON BE AVAILABLE"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Sortify}
+              title="Automated Waste Management System"
+              description="A smart trash bin using Python, YOLOv5, Raspberry Pi, and Arduino for AI-powered waste sorting."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Roblox}
               title="Roblox Game"
-              description="Ongoing"            
+              description="Ongoing"
             />
           </Col>
         </Row>

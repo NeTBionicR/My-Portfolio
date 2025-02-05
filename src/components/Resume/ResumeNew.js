@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/CV AdamM CS.pdf";
+import englishPdf from "../../Assets/../Assets/CV AdamM CS - English.pdf";
+import frenchPdf from "../../Assets/../Assets/CV AdamM CS - French.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -10,10 +11,22 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [pdf, setPdf] = useState(englishPdf); // State to track the current PDF
+  const [language, setLanguage] = useState("English"); // State to track the current language
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  const toggleLanguage = () => {
+    if (language === "English") {
+      setPdf(frenchPdf);
+      setLanguage("French");
+    } else {
+      setPdf(englishPdf);
+      setLanguage("English");
+    }
+  };
 
   return (
     <div>
@@ -24,10 +37,17 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", marginRight: "10px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="secondary"
+            onClick={toggleLanguage}
+            style={{ maxWidth: "250px" }}
+          >
+            Switch to {language === "English" ? "French" : "English"}
           </Button>
         </Row>
 
@@ -42,10 +62,17 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", marginRight: "10px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="secondary"
+            onClick={toggleLanguage}
+            style={{ maxWidth: "250px" }}
+          >
+            Switch to {language === "English" ? "French" : "English"}
           </Button>
         </Row>
       </Container>
